@@ -1,0 +1,123 @@
+STAR version=2.7.8a
+STAR compilation time,server,dir=Sat Feb 20 13:34:37 EST 2021 vega:/home/dobin/data/STAR/STARcode/STAR.master/source
+##### Command Line:
+STAR runThreadN 10 --genomeDir /home/banskotan2/Reference/grch38/STAR/ --readFilesIn=simulation10.fq --outFileNamePrefix=simulation10.sam
+##### Initial USER parameters from Command Line:
+outFileNamePrefix                 simulation10.sam
+###### All USER parameters from Command Line:
+runThreadN                    10     ~RE-DEFINED
+genomeDir                     /home/banskotan2/Reference/grch38/STAR/     ~RE-DEFINED
+readFilesIn                   simulation10.fq        ~RE-DEFINED
+outFileNamePrefix             simulation10.sam     ~RE-DEFINED
+##### Finished reading parameters from all sources
+
+##### Final user re-defined parameters-----------------:
+runThreadN                        10
+genomeDir                         /home/banskotan2/Reference/grch38/STAR/
+readFilesIn                       simulation10.fq   
+outFileNamePrefix                 simulation10.sam
+
+-------------------------------
+##### Final effective command line:
+STAR   --runThreadN 10   --genomeDir /home/banskotan2/Reference/grch38/STAR/   --readFilesIn simulation10.fq      --outFileNamePrefix simulation10.sam
+----------------------------------------
+
+Number of fastq files for each mate = 1
+ParametersSolo: --soloCellFilterType CellRanger2.2 filtering parameters:  3000 0.99 10
+Finished loading and checking parameters
+Reading genome generation parameters:
+### STAR   --runMode genomeGenerate      --runThreadN 15   --genomeFastaFiles /home/banskotan2/Reference/grch38/Homo_sapiens_HG38_GRCH38_104.fa      --sjdbGTFfile /home/banskotan2/Reference/grch38/Homo_sapiens_HG38_GRCH38_104.gtf
+### GstrandBit=32
+versionGenome                 2.7.4a     ~RE-DEFINED
+genomeType                    Full     ~RE-DEFINED
+genomeFastaFiles              /home/banskotan2/Reference/grch38/Homo_sapiens_HG38_GRCH38_104.fa        ~RE-DEFINED
+genomeSAindexNbases           14     ~RE-DEFINED
+genomeChrBinNbits             18     ~RE-DEFINED
+genomeSAsparseD               1     ~RE-DEFINED
+genomeTransformType           None     ~RE-DEFINED
+genomeTransformVCF            -     ~RE-DEFINED
+sjdbOverhang                  100     ~RE-DEFINED
+sjdbFileChrStartEnd           -        ~RE-DEFINED
+sjdbGTFfile                   /home/banskotan2/Reference/grch38/Homo_sapiens_HG38_GRCH38_104.gtf     ~RE-DEFINED
+sjdbGTFchrPrefix              -     ~RE-DEFINED
+sjdbGTFfeatureExon            exon     ~RE-DEFINED
+sjdbGTFtagExonParentTranscripttranscript_id     ~RE-DEFINED
+sjdbGTFtagExonParentGene      gene_id     ~RE-DEFINED
+sjdbInsertSave                Basic     ~RE-DEFINED
+genomeFileSizes               3169991274   24880284672        ~RE-DEFINED
+Genome version is compatible with current STAR
+Number of real (reference) chromosomes= 25
+1	chr1	248956422	0
+2	chr10	133797422	249036800
+3	chr11	135086622	382992384
+4	chr12	133275309	518258688
+5	chr13	114364328	651689984
+6	chr14	107043718	766246912
+7	chr15	101991189	873463808
+8	chr16	90338345	975699968
+9	chr17	83257441	1066139648
+10	chr18	80373285	1149501440
+11	chr19	58617616	1229979648
+12	chr2	242193529	1288699904
+13	chr20	64444167	1530920960
+14	chr21	46709983	1595408384
+15	chr22	50818468	1642332160
+16	chr3	198295559	1693188096
+17	chr4	190214555	1891631104
+18	chr5	181538259	2081947648
+19	chr6	170805979	2263613440
+20	chr7	159345973	2434531328
+21	chr8	145138636	2593914880
+22	chr9	138394717	2739142656
+23	chrM	16569	2877554688
+24	chrX	156040895	2877816832
+25	chrY	57227415	3034054656
+--sjdbOverhang = 100 taken from the generated genome
+Started loading the genome: Tue Oct 18 09:33:16 2022
+
+Genome: size given as a parameter = 3169991274
+SA: size given as a parameter = 24880284672
+SAindex: size given as a parameter = 1
+Read from SAindex: pGe.gSAindexNbases=14  nSAi=357913940
+nGenome=3169991274;  nSAbyte=24880284672
+GstrandBit=32   SA number of indices=6031584162
+Shared memory is not used for genomes. Allocated a private copy of the genome.
+Genome file size: 3169991274 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading Genome ... done! state: good=1 eof=0 fail=0 bad=0; loaded 3169991274 bytes
+SA file size: 24880284672 bytes; state: good=1 eof=0 fail=0 bad=0
+Loading SA ... done! state: good=1 eof=0 fail=0 bad=0; loaded 24880284672 bytes
+Loading SAindex ... done: 1565873619 bytes
+Finished loading the genome: Tue Oct 18 09:33:48 2022
+
+Processing splice junctions database sjdbN=390682,   pGe.sjdbOverhang=100 
+alignIntronMax=alignMatesGapMax=0, the max intron size will be approximately determined by (2^winBinNbits)*winAnchorDistNbins=589824
+Created thread # 1
+Created thread # 2
+Created thread # 3
+Created thread # 4
+Created thread # 5
+Created thread # 6
+Created thread # 7
+Created thread # 8
+Created thread # 9
+Thread #1 end of input stream, nextChar=-1
+Completed: thread #2
+Completed: thread #3
+Completed: thread #5
+Completed: thread #0
+Completed: thread #8
+Completed: thread #7
+Completed: thread #6
+Completed: thread #4
+Completed: thread #9
+Completed: thread #1
+Joined thread # 1
+Joined thread # 2
+Joined thread # 3
+Joined thread # 4
+Joined thread # 5
+Joined thread # 6
+Joined thread # 7
+Joined thread # 8
+Joined thread # 9
+ALL DONE!
